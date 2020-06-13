@@ -1,0 +1,254 @@
+@font-face {
+    font-family: 'Comfortaa', cursive;
+    src: url(https://fonts.googleapis.com/css?family=Comfortaa:600&display=swap);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.background {
+    background-color: #2b2b2b;
+    margin-right: 5%;
+    margin-bottom: 2%;
+    margin-left: 5%;
+    margin-top: 2%;
+    color: rgb(54, 54, 54);
+}
+
+.menu ul {
+    list-style: none;
+}
+ 
+.menu > ul {
+    display: flex;
+    justify-content: center;
+} 
+ 
+.menu > ul li  a {
+    display: block;
+    padding: 15px 30px 15px 30px;
+    font-size: 1em;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: rgba(255, 255, 255, 0.842);
+
+}
+
+.menu > ul li{
+	position: relative;
+}
+
+.menu li a:hover {
+    background: rgba(255, 255, 255, 0.842);
+    color: rgb(126, 126, 126);
+}
+
+.menu li ul {
+    position: absolute;
+    min-width: 150px;
+    display: none;
+}
+
+.menu li > ul li a {
+    padding: 10px;
+    text-transform: none;
+}
+
+.menu li >ul li ul {
+    position: absolute;
+    right: -150px;
+    top: 0;
+}
+
+.menu li:hover > ul {
+    display: block;
+}
+
+.menu, .left, .center, .right, .i{
+    background-color:rgba(255, 255, 255, 0.699);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 1 5px;
+}
+
+.header, .footer, .body {
+    font-family: 'Comfortaa', cursive;
+    display: flex;
+    padding: 1%;
+    background-color: rgba(252, 252, 252, 0.836);
+    margin: 10px;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.menu {
+    order: 1;
+    flex: 1;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.left {
+    order: 1;
+    flex: 1;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.center {
+    order: 2;
+    flex: 3;
+}
+
+.right {
+    order: 3;
+    flex: 1;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.img_right {
+    width: 80%;
+    height: 300px;
+    margin: 50% auto;
+}
+
+.footer {
+    flex-direction: row-reverse;
+}
+
+.img1, .img2, .img3 {
+    width: 70%;
+    margin: 5px auto;
+    align-items: center;
+
+}
+
+.my_body {
+    font-family: 'Comfortaa', cursive;
+    display: flex;
+    padding: 2%;
+    background-color: rgba(252, 252, 252, 0.836);
+    margin: 10px;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.my_photo {
+    float: left;
+    align-items: flex-start;
+    width: 20%;
+    height: 35%;
+    margin: 1% 1% 1% 1%;
+}
+
+.my_menu {
+    background-color:rgba(255, 255, 255, 0.699);
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5px;
+    padding: 2%;
+}
+
+.i {
+    border-radius: 5px 5px 5px 5px;
+}
+
+.author {
+    margin-left: 13em ;
+}
+
+.ul_print {
+    text-align: start;
+}
+
+@media(max-width: 800px) {
+    
+    .header, .body {
+        display: flex;
+        padding: 1%; 
+        background-color: rgba(252, 252, 252, 0.836);
+        margin: 10px;
+    }
+
+    .block_li { 
+        display: none;
+    }
+    
+    .menu {
+        order: 1;
+        flex: 1;
+        border-radius: 5px 0px 0px 5px;
+    }
+    
+    .img_menu {
+        width: 30px;
+        height: 30px;
+    }
+   
+    .body {
+        flex-direction: column;
+    }
+
+    .left {
+        display: flex;
+        order: 1;
+        flex: 1;
+        background-color: rgba(255, 255, 255, 0.699);
+        flex-direction: row;
+        justify-content: space-around;
+        border-radius: 5px 5px 0px 0px;
+    }
+
+    .center {
+        order: 2;
+        flex: 3;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.699);
+        border-radius: 0px 0px 5px 5px;
+    }
+
+    .right {
+        display: none;
+    }
+
+    .img1, .img2, .img3{
+        max-width: 70px;
+        max-height: 70px;
+        flex: 1;
+    }
+
+    .my_body {
+        font-family: 'Comfortaa', cursive;
+        display: flex;
+        padding: 2%;
+        background-color: rgba(252, 252, 252, 0.836);
+        margin: 10px;
+        border-radius: 5px 5px 5px 5px;
+    }
+    
+    .my_photo {
+        display: none;
+    }
+    
+    .my_menu {
+        background-color:rgba(255, 255, 255, 0.699);
+        text-align: left;
+        margin: 0 5px;
+        padding: 2%;
+    }
+
+    .author {
+        text-align: right;
+    }
+}
+
+@media print {
+
+    .right, .left, .footer, img, .menu {display: none}
+
+    .center {
+        background-color: #FFFFFF;
+        font-family: Arial;
+        color: #000000;
+    }
+}

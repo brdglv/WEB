@@ -1,0 +1,36 @@
+body {
+    font-family: 'Jost', sans-serif;
+    background-color: rgba(230, 227, 223, 0.288);
+    color: rgb(46, 17, 17);
+}
+
+.container {
+    width: 90%;
+    text-align: center;
+}
+
+.square {
+    float: left;
+    width: 40%;
+    height: 100%;
+}
+
+.sequence-and-matrix {
+    float: left;
+    width: 25%;
+    height: 100%;
+}
+
+.function {
+    float: right;
+    width: 25%;
+    height: 100%;
+}
+
+#number-small {
+    width: 80px;
+}
+
+#number-big {
+    width: 180px;
+}

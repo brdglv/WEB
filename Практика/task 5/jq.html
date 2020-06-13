@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5.3</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <script>
+        var m = [
+            {
+                text: 'Животныe',
+                childs: [
+                    {
+                        text: 'Беспозвоночные', 
+                        childs: [
+                            {
+                                text: 'Молюски',
+                            },
+                            {
+                                text: 'насекомые',
+                                childs: [
+                                    {
+                                        text: 'Двукрылые',
+                                    },
+                                    {
+                                        text: 'Жуки',
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        text: 'Позвоночные',
+                        childs: [
+                            {
+                                text:'Рептилии',
+                            },
+                            {
+                                text: 'Птицы',
+                            }
+                        ]
+                    }
+                ]
+            }
+        ];
+
+        // 5.3.1
+        createList(m, $('body'));
+
+        function createList(list, body) {
+            let ul = $('<ul>').appendTo(body);
+
+            for (let child of list) {
+                let li = $('<li>', { text: child['text'] }).appendTo(ul);
+                if (child['childs']) {
+                    createList(child['childs'], li);
+                }
+            }
+        }
+
+        // 5.3.2
+        $('li').each(function () {
+            console.log($(this).contents()[0]);
+            console.log($(this).find('li').length);
+        });
+
+        $('li').click(function () {
+            $(this).contents().slideToggle();
+            return false;   
+        });
+    </script>
+</body>

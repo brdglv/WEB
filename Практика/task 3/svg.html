@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9a021aeeb7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+    <!--АДАПТИВНОЕ/МНОГОУРОВНЕВОЕ МЕНЮ-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>     
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <h5>
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index 1.html">Главная <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index 2.html">WEB<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index 3.html">CSS/HTML<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Задания
+                        </a>
+                        <div class="dropdown-menu bg-warning" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item bg-warning" href="svg.html">
+                                <h6>SVG</h6>
+                            </a>
+                            <a class="dropdown-item bg-warning" href="MathML.html">
+                                <h6>MathML</h6>
+                            </a>
+                            <a class="dropdown-item bg-warning nav-link dropdown-toggle" id="navbarDropdownMenuLink" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Task
+                            </a>
+                            <div class="dropdown-menu navbar-light bg-warning" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item navbar-light bg-warning" href="index 1.1.html">
+                                    <h6>Task 1</h6>
+                                </a>
+                                <a class="dropdown-item navbar-light bg-warning" href="index 1.2.html">
+                                    <h6>Task 2</h6>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </h5>
+        </div>
+    </nav>
+    <!--ХЛЕБНЫЕ КРОШКИ-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="container a col-xs-12 col-lg-12 col-sm-12 col-md-12">
+                <nav aria-label="breadcrumb">
+                    <nav aria-label="breadcrumb">
+                        <ol class="col breadcrumb">
+                            <li class="breadcrumb-item"><a href="SVG.html">SVG</a></li>
+                            <li class="breadcrumb-item"><a href="SVG.html">SVG объект</a></li>
+                            <li class="breadcrumb-item"><a href="SVG.html">Cворачивание</a></li>
+                        </ol>
+                    </nav>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- КОНТЕНТ -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="txt container d-none d-lg-block col-lg-3">
+                <div class="media mt-3">
+                    <img class="mr-3" src="img/i.jpg" height="60" width="60">
+                    <div class="media-body">
+                        <h5 class="mt-0">ПРИВЕТ!</h5>
+                        <h6>
+                            Меня зовут Вика и сейчас вы находитесь на моем сайте. Обращайтесь к кнопкам адаптивного меню, чтобы переключаться между страницами. 
+                        </h6>
+                    </div>
+                </div>
+            </div>
+            <div class="container col-lg-8 col-sm-11 col-md-11 col-xs-11">
+                <div class="row">
+                    <!--SVG-->
+                    <div class="container d-none d-lg-block col-lg-4">
+                        <svg width="600" height="300">
+                            <ellipse cx="250" cy="150" rx="130" ry="90" fill="black" />
+                            <ellipse cx="250" cy="160" rx="100" ry="65" style="fill:rgb(255, 208, 136)" />
+                            <ellipse cx="205" cy="150" rx="20" ry="25" style="stroke:white; fill:rgb(146, 44, 44); stroke-width:6" />
+                            <ellipse cx="295" cy="150" rx="20" ry="25" style="stroke:white; fill:rgb(146, 44, 44); stroke-width:6" />
+                            <circle cx="250" cy="170" r="5" style="fill:rgb(146, 44, 44);" />
+                            <polygon points="140,50 200,67 140,110" fill="black"/>
+                            <polygon points="300,67 360,50 360,110" fill="black"/>
+                            <circle cx="250" cy="193" r="15" style="fill:rgb(146, 44, 44)" />
+                            <circle cx="250" cy="189" r="13.5" style="fill:rgb(255, 208, 136)" />
+                            <line x1="50" y1="140" x2="140" y2="150" style="stroke:rgb(0, 0, 0)"stroke-width="2" />
+                            <line x1="50" y1="160" x2="140" y2="160" style="stroke:rgb(0, 0, 0)"stroke-width="2" />
+                            <line x1="350" y1="150" x2="440" y2="140" style="stroke:rgb(0, 0, 0)"stroke-width="2" />
+                            <line x1="350" y1="160" x2="440" y2="160" style="stroke:rgb(0, 0, 0)"stroke-width="2" />
+                        </svg>
+                    </div>
+                    <!--СВОРАЧИВАНИЕ-->
+                    <div class="s container col-md-12 col-lg-6 col-xs-12 col-sm-12">
+                        <p>
+                            <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                GitHub
+                            </a>
+                        </p>
+                        <div class="col1 collapse" id="collapseExample">
+                            <div class="col1 card card-body">
+                                Крупнейший веб-сервис для хостинга IT-проектов и их совместной разработки. Веб-сервис основан на системе контроля версий Git и разработан на Ruby on Rails и Erlang компанией GitHub, Inc (ранее Logical Awesome). Сервис бесплатен для проектов с открытым исходным кодом и (с 2019 года) небольших частных проектов, предоставляя им все возможности (включая SSL), а для крупных корпоративных проектов предлагаются различные платные тарифные планы.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

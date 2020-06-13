@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 4</title>
+    <link rel="stylesheet" type="text/css" href="css.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+
+        <!--ПЛОЩАДЬ(4.1)-->
+        <div class="square">
+            <h2>Площадь эллипса (S = π*a*b)</h2>
+            <img src="элипс.png"><br><br>
+            <h3>
+                Введите длину большей полуоси эллипса (a): <input type="number" value="" class="height" id="number-small"><br>
+                Введите длину меньшей полуоси эллипса (b): <input type="number" value="" class="width" id="number-small"><br>
+                <button class="ellipse">Вычислить</button><br><br>
+                Площадь эллипса = <a class="square-ellipse"></a>
+            </h3>
+            <script src="4.1.js"></script>
+        </div>
+
+        <!--ЦИКЛЫ(4.2) И МАТРИЦА(4.3)-->
+        <div class="sequence-and-matrix">
+            <div>
+                <h2>Матрица 8 на 8</h2>
+                <h5>
+                    <button class="random">Сгенерировать массив</button> <br>
+                    <button class="order">Упорядочить элементы в каждой строке в порядке возрастания их значений</button> <br><br>
+                    <div id="table"></div>
+                </h5>
+                <script src="4.3.js"></script>
+            </div>
+            <div>
+                <h2> 
+                    Нахождение sin X<br>   
+                    sinx = X-X<sup><small>3</small></sup>/3!+ X<sup><small>5</small></sup>/5!-... 
+                </h2>
+                <h3>
+                    Введите значение X: <input type="number" value="" class="Xval" id="number-small"><br>
+                    Введите значение N (N > 0): <input type="number" value="" class="Nval" id="number-small"><br><br>
+                    <button class="cycle">Вычислить</button><br><br>
+                    sin X = <a class="sin"></a>
+                </h3>
+                <script src="4.2.js"></script>
+            </div>
+        </div>
+
+        <!--ФУНКЦИИ(4.4)-->
+        <div class="function">
+            <h2>Функции</h2>
+            <h3>
+                Генерация рандомных чисел<br>
+                <form onsubmit="genAndSortArray();" action="javascript:void(0);">
+                    Введите min: <input type="number" value="" class="min" id="number-small"><br>
+                    Введите max: <input type="number" value="" class="max" id="number-small"><br>
+                    Введите N: <input type="number" value="" class="n" min="0" id="number-small"><br>       
+                    <button class="submit">Сгенерировать</button><br><br>
+                    Генерация массива<br>
+                    Сгенерированный массив: <input class="generatedArray" value="" id="number-big"><br>
+                    Отсортированный массив: <input class="sortedArray" value="" id="number-big"><br><br>
+                </form>
+                Работа с матрицей
+                <form onsubmit="makeArray()" action="javascript:void(0);"> 
+                    Введитe массив: <input class="array" value="" id="number-small">
+                    <button class="submit">Расположить змейкой</button>
+                </form>
+            </h3>
+            <h5>
+                <div class="snakeArray"></div>
+            </h5>
+            <script src="4.4.js"></script>
+        </div>
+
+    </div>
+</body>
+
+</html>

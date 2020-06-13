@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5.1/5.2</title>
+</head>
+<body>
+    <script>
+        var m = [
+            {
+                text: 'Животныe',
+                childs: [
+                    {
+                        text: 'Беспозвоночные', 
+                        childs: [
+                            {
+                                text: 'Молюски',
+                            },
+                            {
+                                text: 'насекомые',
+                                childs: [
+                                    {
+                                        text: 'Двукрылые',
+                                    },
+                                    {
+                                        text: 'Жуки',
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        text: 'Позвоночные',
+                        childs: [
+                            {
+                                text:'Рептилии',
+                            },
+                            {
+                                text: 'Птицы',
+                            }
+                        ]
+                    }
+                ]
+            }
+        ];
+
+        // 5.1
+        createList(m, document.getElementsByTagName('body')[0]);
+
+        function createList(list, body) {
+            let ul = document.createElement('ul');
+            body.appendChild(ul);
+
+            for (let child of list) {
+                let li = document.createElement('li');
+                let text = document.createTextNode(child['text']);
+                ul.appendChild(li);
+                li.appendChild(text);
+                if (child['childs']) {
+                    createList(child['childs'], li);
+                }
+            }
+        }
+
+        // 5.2
+        cons(document.documentElement);
+
+        function cons(element) {
+            console.log(element);
+            for (child of element.children) {
+                cons(child);
+            }
+        }
+
+    </script>
+</body>
+</html>

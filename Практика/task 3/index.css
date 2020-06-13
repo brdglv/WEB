@@ -1,0 +1,80 @@
+.container {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.container-fluid > .row > .container:nth-child(1) {
+    background-color: #fdde2fea;
+    text-align: left;
+    font-size: medium;
+}
+
+.container-fluid > .row > .container:nth-child(2) {
+    background-color: #ffe54fda;
+    text-align: left;
+    font-size: medium;
+}
+
+.container-fluid > .row > .container:nth-child(3) {
+    background-color: #ffe54fda;
+    text-align: left;
+    font-size: small;
+}
+
+.container-fluid > .row > .txt {
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 15px;
+    margin-right: 1px;
+    margin-left: 21.5px;
+    height: 330px;
+}
+
+.f {
+    padding-top: 2%;
+}
+
+.s {
+    padding-left: 5%;
+}
+
+.a {
+    padding-right: 5;
+    padding-top: 1%;
+}
+
+.col1 {
+    background-color: #ffe54fda;
+}
+
+.col {
+    background-color: #fdde2fea;
+}
+
+.math1 {
+    padding-left: 5%;
+}
+
+.math2 {
+    padding-left: 5%;
+}
+
+@media(max-width: 1245px) {
+    .container-fluid > .row > .txt {
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-top: 15px;
+        margin-right: 1px;
+        margin-left: 21.5px;
+        height: 420px;
+    }
+}
+
+.badge1 {
+    margin-left: auto;
+    margin-right: auto;
+}
